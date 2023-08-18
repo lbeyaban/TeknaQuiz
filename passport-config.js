@@ -19,7 +19,6 @@ function initialize(passport) {
         return done(null, user)
 
       } else {
-        console.log("Buradayım");
         return done(null, false, { message: 'Password incorrect' })
       }
     } catch (e) {

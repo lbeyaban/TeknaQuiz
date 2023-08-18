@@ -30,6 +30,7 @@ app.use(passport.session())
 app.use((req,res,next) => {
 
   res.locals.flashSuccess = req.flash("flashSuccess")
+  res.locals.flashError = req.flash("flashError")
   next()
 
 })

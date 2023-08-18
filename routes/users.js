@@ -17,6 +17,14 @@ router.get('/login', checkNotAuthenticated, function (req, res, next) {
   res.render('login', {
     title: "Login Sayfasi"
   })
+  
+});
+
+router.get('/register', checkNotAuthenticated, function (req, res, next) {
+
+  res.render('register', {
+    title: "Register Sayfasi"
+  })
 
 });
 

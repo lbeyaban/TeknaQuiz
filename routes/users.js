@@ -6,7 +6,7 @@ const controller = require('../controller')
 
 function checkNotAuthenticated(req, res, next) {
   if (req.isAuthenticated()) {
-    return res.redirect('/')
+    res.redirect('/')
   }
   next()
 }
@@ -19,6 +19,8 @@ router.get('/login', checkNotAuthenticated, function (req, res, next) {
   })
   
 });
+
+
 
 router.get('/logout', checkNotAuthenticated, function (req, res, next) {
 
@@ -39,10 +41,11 @@ router.post('/register', checkNotAuthenticated, async function (req, res, next) 
 
 });
 
-router.post('/login', checkNotAuthenticated, passport.authenticate('local', {
+router.post('/login', checkNotAuthenticated,  passport.authenticate('local', {
 
   successRedirect: '/',
-  failureRedirect: '/users/login'
+  failureRedirect: '/users/login',
+  failureFlash : true
 
 }))
 

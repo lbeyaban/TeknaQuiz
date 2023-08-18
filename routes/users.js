@@ -20,6 +20,13 @@ router.get('/login', checkNotAuthenticated, function (req, res, next) {
   
 });
 
+router.get('/register', checkNotAuthenticated, function (req, res, next) {
+
+  res.render('register', {
+    title: "Register Sayfasi"
+  })
+  
+});
 
 
 router.get('/logout', checkNotAuthenticated, function (req, res, next) {

@@ -22,10 +22,10 @@
                 <h1 class="logo">YOUR <span>LOGO</span></h1>
                 <h5 class="registerTitle">Giriş Yap</h5>
                 <p class="loginLink">Hesabın Yok mu? <a href="http://localhost:3000/users/register">Kayıt Ol</a></p>
-                <form action="">
-                    <input type="text" placeholder="Email*" class="loginEmail">
-                    <input type="password" placeholder="Şifreniz*" class="pass">
-                    <button class="register">Kayıt Ol</button>
+                <form action="/users/login" method="POST">
+                    <input type="text" placeholder="Email*" class="loginEmail" name="email">
+                    <input type="password" placeholder="Şifreniz*" class="pass" name="password">
+                    <input type="submit" class="register" value="Giriş Yap">
                 </form>
                 <div class="orParent">
                     <div class="orLeft"></div>

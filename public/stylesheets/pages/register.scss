@@ -47,7 +47,11 @@
         }
         form {
             margin-top: 1rem;
-            input {
+            .nameSurname,
+            .email,
+            .pass,
+            .passAgain,
+            .loginEmail{
                 height: 2.5rem;
                 background: url("../../img/person.svg") no-repeat scroll 5px 10px;
                 padding-left: 25px;

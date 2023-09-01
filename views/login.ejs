@@ -15,6 +15,7 @@
 
 <body>
 
+
     <div class="registerParent">
         <div class="registerContent">
             <div class="registerContainer">
@@ -22,6 +23,13 @@
                 <h1 class="logo">YOUR <span>LOGO</span></h1>
                 <h5 class="registerTitle">Giriş Yap</h5>
                 <p class="loginLink">Hesabın Yok mu? <a href="http://localhost:3000/users/register">Kayıt Ol</a></p>
+
+                <% if(messages.error) { %>
+
+                     <%= messages.error %>
+            
+                <% } %>
+
                 <form action="/users/login" method="POST">
                     <input type="text" placeholder="Email*" class="loginEmail" name="email">
                     <input type="password" placeholder="Şifreniz*" class="pass" name="password">

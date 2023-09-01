@@ -4,6 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const flash = require('connect-flash')
+const flash1 = require('express-flash')
 const session = require('express-session')
 const passport = require('passport')
 var app = express();
@@ -19,6 +20,8 @@ app.use(session({
   saveUninitialized : true
 }))
 app.use(flash())
+app.use(flash1())
+
 
 
 //Passport 

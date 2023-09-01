@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
 const passport = require('passport')
-
 const controller = require('../controller')
 
 function checkNotAuthenticated(req, res, next) {

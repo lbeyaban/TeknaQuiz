@@ -1,0 +1,17 @@
+@import "./variables.scss";
+
+.teknaAlert{
+    background-color: $red;
+    color: white;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    .alertMessage,.alertClose{
+        padding: 1rem;
+    }
+    .alertClose{
+        cursor: pointer;
+    }
+}

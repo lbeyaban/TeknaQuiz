@@ -1,6 +1,6 @@
 const helper = require('../helper');
 const qs = require('qs')
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs')
 const passport = require('passport')
 
 module.exports = {

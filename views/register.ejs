@@ -27,7 +27,7 @@
                 <h1 class="logo">YOUR <span>LOGO</span></h1>
                 <h5 class="registerTitle">Kayıt Ol</h5>
                 <p class="loginLink">Hesabın Var mı? <a href="http://localhost:3000/users/login">Giriş Yap</a></p>
-                <form action="/users/register" method="POST">
+                <form class="registerForm" action="/users/register" method="POST">
                     <input type="text" placeholder="İsim Soyisim*" class="nameSurname" name="nameSurname">
                     <input type="email" placeholder="Email*" class="email" name="email">
                     <select class="selectClass" name="sinif">
@@ -40,6 +40,15 @@
                     <input type="password" placeholder="Şifreniz*" class="pass" name="password">
                     <input type="password" placeholder="Şifreniz Tekrar*" class="passAgain">
                     <input class="register" type="submit" value="Kayıt Ol">
+                    <div class="teknaAlert hideAlert">
+                        <div class="teknaAlertContent">
+                            <div class="alertMessage">
+                            </div>
+                            <div class="alertClose">
+                                <i class="bi bi-x-circle"></i>
+                            </div>
+                        </div>
+                    </div>
                 </form>
                 <div class="orParent">
                     <div class="orLeft"></div>
@@ -96,7 +105,7 @@
             </div>
         </div>
     </div>
-
+    <script src="../script/register.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"

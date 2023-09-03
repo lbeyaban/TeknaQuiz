@@ -35,16 +35,18 @@
                     <input type="submit" class="register" value="Giriş Yap">
 
                     <div class="teknaAlert">
-                        <% if (messages.error) { %>
-                            <div class="alertMessage">
-                                <%= messages.error %>
-                            </div>
-                        <% } %>
-                        <% if (messages.error) { %>
-                            <div class="alertClose">
-                                <i class="bi bi-x-circle"></i>
-                            </div>
-                        <% } %>
+                        <div class="teknaAlertContent">
+                            <% if (messages.error) { %>
+                                <div class="alertMessage">
+                                    <%= messages.error %>
+                                </div>
+                            <% } %>
+                            <% if (messages.error) { %>
+                                <div class="alertClose">
+                                    <i class="bi bi-x-circle"></i>
+                                </div>
+                            <% } %>
+                        </div>
                     </div>
                 </form>
 

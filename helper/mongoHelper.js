@@ -13,7 +13,7 @@ module.exports = {
 
             let documents = null;
 
-            const uri = 'mongodb://localhost:27017';
+            const uri = 'mongodb://0.0.0.0:27017';
 
             let client = new MongoClient(uri);
 
@@ -59,7 +59,7 @@ module.exports = {
 
                 let documents = null;
 
-                const uri = 'mongodb://localhost:27017';
+                const uri = 'mongodb://0.0.0.0:27017';
 
                 let client = new MongoClient(uri);
 
@@ -92,7 +92,7 @@ module.exports = {
 
             try {
 
-                const uri = 'mongodb://localhost:27017';
+                const uri = 'mongodb://0.0.0.0:27017';
 
                 let client = new MongoClient(uri);
 
@@ -139,7 +139,7 @@ module.exports = {
 
             let documents = null;
 
-            const uri = 'mongodb://localhost:27017';
+            const uri = 'mongodb://0.0.0.0:27017';
 
             let client = new MongoClient(uri);
 

@@ -42,46 +42,44 @@ body {
       color: #B1B1B1; }
       .registerParent .registerContent .loginLink a {
         color: #EF505A; }
-    .registerParent .registerContent form {
-      margin-top: 1rem; }
-      .registerParent .registerContent form .nameSurname,
-      .registerParent .registerContent form .email,
-      .registerParent .registerContent form .pass,
-      .registerParent .registerContent form .passAgain,
-      .registerParent .registerContent form .loginEmail {
-        height: 2.5rem;
-        background: url("../../img/person.svg") no-repeat scroll 5px 10px;
-        padding-left: 25px;
-        margin-top: 1rem;
-        border: none;
-        border: 1px solid #B1B1B1; }
-        .registerParent .registerContent form .nameSurname:focus,
-        .registerParent .registerContent form .email:focus,
-        .registerParent .registerContent form .pass:focus,
-        .registerParent .registerContent form .passAgain:focus,
-        .registerParent .registerContent form .loginEmail:focus {
-          outline: none;
-          box-shadow: 0px 4px 15px 0px rgba(99, 81, 246, 0.3);
-          border: 1px solid #6351F6; }
-      .registerParent .registerContent form input,
-      .registerParent .registerContent form select {
-        border-radius: 5px; }
-      .registerParent .registerContent form .nameSurname,
-      .registerParent .registerContent form .pass,
-      .registerParent .registerContent form .passAgain {
-        width: 100%; }
-      .registerParent .registerContent form .selectClass,
-      .registerParent .registerContent form .email {
-        width: 49.5%; }
-        @media screen and (max-width: 1080px) {
-          .registerParent .registerContent form .selectClass,
-          .registerParent .registerContent form .email {
-            width: 100%;
-            margin-top: 1rem; } }
-      .registerParent .registerContent form .selectClass {
-        height: 2.5rem;
-        border: 1px solid #B1B1B1;
-        color: #B1B1B1; }
+    .registerParent .registerContent form .nameSurname,
+    .registerParent .registerContent form .email,
+    .registerParent .registerContent form .pass,
+    .registerParent .registerContent form .passAgain,
+    .registerParent .registerContent form .loginEmail {
+      height: 2.5rem;
+      background: url("../../img/person.svg") no-repeat scroll 5px 10px;
+      padding-left: 25px;
+      margin-top: 1rem;
+      border: none;
+      border: 1px solid #B1B1B1; }
+      .registerParent .registerContent form .nameSurname:focus,
+      .registerParent .registerContent form .email:focus,
+      .registerParent .registerContent form .pass:focus,
+      .registerParent .registerContent form .passAgain:focus,
+      .registerParent .registerContent form .loginEmail:focus {
+        outline: none;
+        box-shadow: 0px 4px 15px 0px rgba(99, 81, 246, 0.3);
+        border: 1px solid #6351F6; }
+    .registerParent .registerContent form input,
+    .registerParent .registerContent form select {
+      border-radius: 5px; }
+    .registerParent .registerContent form .nameSurname,
+    .registerParent .registerContent form .pass,
+    .registerParent .registerContent form .passAgain {
+      width: 100%; }
+    .registerParent .registerContent form .selectClass,
+    .registerParent .registerContent form .email {
+      width: 49.5%; }
+      @media screen and (max-width: 1080px) {
+        .registerParent .registerContent form .selectClass,
+        .registerParent .registerContent form .email {
+          width: 100%;
+          margin-top: 1rem; } }
+    .registerParent .registerContent form .selectClass {
+      height: 2.5rem;
+      border: 1px solid #B1B1B1;
+      color: #B1B1B1; }
     .registerParent .registerContent .orParent {
       display: flex;
       align-items: center;
